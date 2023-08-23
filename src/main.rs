@@ -1,6 +1,7 @@
 #![feature(test)]
 
 pub mod mult;
+pub mod search_2d;
 
 use std::io;
 
@@ -26,6 +27,11 @@ fn mult_example() {
     }
 }
 
+fn search_2d_example() {
+    let res = search_2d::search_matrix(vec![vec![1,3,5,7],vec![10,11,16,20],vec![23,30,34,60]], 60);
+    println!("{}", res);
+}
+
 fn main() {
-    mult_example()
+    search_2d_example()
 }
